@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Analisis & SPK AHP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { font-family: Calibri, sans-serif; background-color: #f8f9fa; padding: 20px; }
+        .excel-table { background-color: #ffffff; border: 1px solid #dee2e6; font-size: 14px; }
+        .excel-table th, .excel-table td { border: 1px solid #dee2e6; vertical-align: middle; text-align: center; }
+        .excel-table th { background-color: #f2f2f2; font-weight: bold; }
+        .table-title { font-weight: bold; margin-top: 20px; margin-bottom: 10px; color: #333; }
+    </style>
+</head>
+<body>
+
+<div class="container my-4">
+    
+    <!-- TABEL 1: Perbandingan Kriteria -->
+    <div class="table-title">1. Perbandingan Kriteria dengan KRITERIA</div>
+    <div class="table-responsive">
+        <table class="table excel-table">
+            <thead>
+                <tr>
+                    <th>Kriteria</th>
+                    <th>S</th>
+                    <th>K</th>
+                    <th>B</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>S</strong></td>
+                    <td>1</td>
+                    <td>0,5</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td><strong>K</strong></td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td><strong>B</strong></td>
+                    <td>0,333333</td>
+                    <td>0,25</td>
+                    <td>1</td>
+                </tr>
+                <tr class="table-warning">
+                    <td><strong>TOTAL</strong></td>
+                    <td>3,333333</td>
+                    <td>1,75</td>
+                    <td>8</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TABEL 2: Vektor & Bobot Kriteria -->
+    <div class="table-title">2. Matriks Vektor & Bobot Kriteria</div>
+    <div class="table-responsive">
+        <table class="table excel-table">
+            <thead>
+                <tr>
+                    <th>Kriteria</th>
+                    <th>S</th>
+                    <th>K</th>
+                    <th>B</th>
+                    <th>VEKTOR</th>
+                    <th>BOBOT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>S</strong></td>
+                    <td>0,3</td>
+                    <td>0,285714286</td>
+                    <td>0,375</td>
+                    <td>0,960714286</td>
+                    <td>0,320238095</td>
+                </tr>
+                <tr>
+                    <td><strong>K</strong></td>
+                    <td>0,6</td>
+                    <td>0,571428571</td>
+                    <td>0,5</td>
+                    <td>1,671428571</td>
+                    <td>0,557142857</td>
+                </tr>
+                <tr>
+                    <td><strong>B</strong></td>
+                    <td>0,1</td>
+                    <td>0,142857143</td>
+                    <td>0,125</td>
+                    <td>0,367857143</td>
+                    <td>0,122619048</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="text-end fw-bold">Total Bobot:</td>
+                    <td><strong>1</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TABEL 3: Skor Akhir & Rangking Alternatif -->
+    <div class="table-title">3. Skor Akhir & Rangking Alternatif (Mobil)</div>
+    <div class="table-responsive">
+        <table class="table excel-table">
+            <thead>
+                <tr>
+                    <th>Alternatif (Mobil)</th>
+                    <th>Bobot Style</th>
+                    <th>Bobot Keandalan</th>
+                    <th>Bobot Bahan Bakar</th>
+                    <th>SKOR AKHIR</th>
+                    <th>Rangking</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Avanza</strong></td>
+                    <td>0,04256</td>
+                    <td>0,05013</td>
+                    <td>0,02706</td>
+                    <td>0,11975</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td><strong>Xenia</strong></td>
+                    <td>0,03456</td>
+                    <td>0,064055</td>
+                    <td>0,037146</td>
+                    <td>0,135761</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td><strong>Ertiga</strong></td>
+                    <td>0,1248</td>
+                    <td>0,291311</td>
+                    <td>0,048585</td>
+                    <td>0,464696</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><strong>Grand Livina</strong></td>
+                    <td>0,11808</td>
+                    <td>0,151504</td>
+                    <td>0,010332</td>
+                    <td>0,279916</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- KESIMPULAN -->
+    <div class="bg-white p-3 border rounded mt-4">
+        <h6 class="fw-bold mb-3">Kesimpulan & Hasil Analisis:</h6>
+        <ol class="ps-3 mb-0">
+            <li class="mb-2">
+                <strong>Alternatif Terbaik:</strong> Berdasarkan perhitungan skor akhir, <strong>Ertiga</strong> menduduki peringkat pertama (Rangking 1) dengan skor tertinggi (0,464696).
+            </li>
+            <li class="mb-0">
+                <strong>Konsistensi Kriteria:</strong> Perbandingan kriteria telah dihitung dengan bobot konsistensi yang valid untuk pengambilan keputusan.
+            </li>
+        </ol>
+    </div>
+
+</div>
+
+</body>
+</html>
